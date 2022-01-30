@@ -8,15 +8,16 @@ body{
 }
 
 h1 {
-    height: 50vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 3rem;
     background: var(--dark);
     color: var(--brewgreen);
     font-size: 15vh;
+    font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -34,6 +35,8 @@ h1 {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 2.5vh;
+    font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .navbar a:hover {
@@ -57,8 +60,9 @@ h1 {
 }
 
 .about-container {
-    height: 40vh;
+    min-height: 40vh;
     display: flex;
+    overflow: scroll;
     justify-content: center;
     align-items: center;
     background: var(--brewgreen)
@@ -68,6 +72,7 @@ h1 {
     margin-right: 5em;
     margin-bottom: 1em;
     margin-top: 1em;
+    font-size: 2rem;
 }
 
 footer {
@@ -84,33 +89,45 @@ h2 {
     font-size: 5vh;
     margin: 2vh;
     padding-top: 2vh;
+    font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
 }
 
 h3 {
     font-size: 5vh;
     margin: 2vh;
     text-align: center;
+    font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-family: 'Caveat Brush', Arial, Helvetica, sans-serif;
+    padding-top: 1rem;
+    font-size: 1.5rem;
 }
 
 p {
     margin: 1vh;
+    font-family: 'Caveat Brush', Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.menu {
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fill, minmax(30vh, 75vh));
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
 }
 
 .drinks {
-    float: left;
-    width: 45%;
-    margin: 1rem;
-    padding: 1rem;
     border: 3px dotted white;
     background: var(--dark);
     color: white;
 }
 
 .food {
-    float: right;
-    width: 45%;
-    margin: 1rem;
-    padding: 1rem;
     border: 3px dotted white;
     background: var(--dark);
     color: white;
@@ -155,12 +172,16 @@ p {
 }
 
 .music-container {
-    height: 40vh;
+    min-height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: var(--brewgreen);
     margin-right: 4rem;
+}
+
+.music-text{
+    font-size: 2rem;
 }
 
 .kk-img {
@@ -171,4 +192,27 @@ p {
     margin-left: 5em;
     margin-top: 1em;
     margin-bottom: 3em;
+}
+
+.scallop {
+    position: relative;
+    padding: 50px;
+}
+
+.scallop::after{
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+    width: 100%;
+    content: "";
+    background: radial-gradient(circle at 50% 0%, var(--dark) 25%, var(--brewgreen) 26%, var(--brewgreen) 40%);
+    background-color: teal;
+    background-size: 50px 100px;
+    height: 50px;
+    background-repeat: repeat-x;
+}
+
+.after-scallop {
+    padding: 50px;
+    margin-bottom: 50px;
 }
