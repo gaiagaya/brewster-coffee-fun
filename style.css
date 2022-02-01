@@ -213,6 +213,21 @@ p {
     font-size: 2rem;
 }
 
+.art-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    grid-template-rows: repeat(auto-fill, minmax(100px,1fr));
+    grid-gap:1px;
+    align-items: start;
+    justify-items: center;
+    margin: auto;
+    width: 500px;
+}
+
+.art-grid img {
+    max-width: 100%
+}
+
 .team{
     max-width: 1200px;
     margin: 0 auto;
