@@ -1,6 +1,8 @@
 :root{
     --dark: #2e2727;
     --brewgreen: #6A9A92;
+    --darkbrew: #264d47;
+    --lightbrew: #aed1cc;
     --spacing: 3rem;
     --handwriting: 'Indie Flower', Arial, Helvetica, sans-serif;
     --typed: 'Heebo', Arial, Helvetica, sans-serif;
@@ -27,7 +29,7 @@ h1 {
 }
 
 .navbar {
-    background: var(--dark);
+    background: var(--darkbrew);
     overflow: hidden;
     position: sticky;
     top: 0;
@@ -43,15 +45,17 @@ h1 {
     font-size: 2.5vh;
     font-family: var(--handwriting);
     font-weight: bold;
+    color: var(--lightbrew);
 }
 
 .navbar a:hover {
     background: var(--dark);
-    color: var(--dark);
+    color: var(--brewgreen);
+
 }
 
 .navbar a.active {
-    background: white;
+    background: var(--lightbrew);
     color: var(--dark);
 }
 
@@ -283,7 +287,7 @@ p {
     left: 0px;
     width: 100%;
     content: "";
-    background: radial-gradient(circle at 50% 0%, var(--dark) 25%, transparent 26%, transparent 40%);
+    background: radial-gradient(circle at 50% 0%, var(--dark) 25%, var(--darkbrew) 26%, transparent 40%);
     background-size: 50px 100px;
     height: 50px;
     background-repeat: repeat-x;
