@@ -7,17 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
         <link rel="icon" type:"image/x-icon" href="brewstoid.png">
     </head>
     <body>
         <main>
             <nav class="navbar">
                 <a class="active" href=#home>Home</a>
-                <a href=#about>About</a>
-                <a href=#food>Food</a>
-                <a href=#drinks>Drink</a>
+                <a href=#about>About Brewster's</a>
+                <a href=#blackboards>Seasonal Specials</a>
                 <a href=#music>Live Music</a>
+                <a href=#art>Art Gallery</a>
+                <a href=#team>Barista Team</a>
+                <a href=menu.html>Full Menu</a>
             </nav>
             <h1 class="scallop animate__animated animate__flipInX">Brewster's Coffee Shop</h1>
             <section class="about">
@@ -41,7 +43,7 @@
                     <img class="brewster-img" src=brewster.png alt="a photo of Brewster, the cafe owner, he is a muted green pidgeon, with thick black eyebrow & whisker markings, and wings in shades of green and a bright yellow beak and pink feets, he is wearing a black and white barista outfit with a black bowtie and black spectacles, he is holding one wing up to his chin in a thinking expression.">
                 </div>
             </section>
-            <section class="blackboards">
+            <section class="blackboards" id="blackboards">
                 <div class="blackboard">
                     <h3>Drinks</h3>
                     <article class="blackboard-item">
@@ -88,18 +90,21 @@
             <section class="music" id="music">
                 <h2>Live Music Saturdays</h2>
                 <article class="music-container">
+                    <div>
+                        <p class="music-text">
+                            On Saturdays we have live music from Brewster's friend, DJ K.K.
+                        </p>
+                        <p class="music-text">
+                            DJ K.K. is renown throughout the universe for his expansive music knowledge and constantly changing musical style. Some of his more famous songs include Bubblegum KK, Stale Cupcakes, Café KK, and KK Swing - which is Brewster's particular favorite. Some of his lesser known, but still very enjoyable songs, include Drivin', Animal City, and Farewell. If you're lucky, you may hear one of these while you visit!
+                        </p>
+                        <p class="music-text">
+                            If you'd like to request that DJ KK plays a specific song, please buy a song token for 100 bells directly from Brewster at the coffee bar. You can then present the song token to DJ KK and request your choice of song. Be careful though - even DJ KK's repoertoire has its limits, and if you request a song outside of these, he'll play you a fan favorite instead. Don't worry, you won't be disappointed. After all, all DJ KK songs are good songs. :D  
+                        </p>
+                    </div>
                     <img class="kk-img" src=kk.png alt="an digital drawing of a white dog with thick black eyebrows. this is DJ KK, he is sitting on a stool in front of a large warm brown door and holding a guitar in his front two paws. the guitar is light brown. DJ KK is smiling and ready to play a tune.">
-                    <p class="music-text">
-                        On Saturdays we have live music from Brewster's friend, DJ K.K. 
-                    </p>
-                    <p class="music-text">
-                        DJ K.K. is renown throughout the universe for his expansive music knowledge and constantly changing musical style. Some of his more famous songs include Bubblegum KK, Stale Cupcakes, Café KK, and KK Swing - which is Brewster's particular favorite. Some of his lesser known, but still very enjoyable songs, include Drivin', Animal City, and Farewell. If you're lucky, you may hear one of these while you visit!
-                    </p>
-                    <p class="music-text">
-                        If you'd like to request that DJ KK plays a specific song, please buy a song token for 100 bells directly from Brewster at the coffee bar. You can then present the song token to DJ KK and request your choice of song. Be careful though - even DJ KK's repoertoire has its limits, and if you request a song outside of these, he'll play you a fan favorite instead. Don't worry, you won't be disappointed. After all, all DJ KK songs are good songs. :D  
-                    </p>
-                </article>
+                </div>
             </section>
+            <section class="art" id="art">
                 <h2>
                     Art on Display
                 </h2>
@@ -109,7 +114,8 @@
                 <p>
                     All artwork on display is for sale, directly from Redd!
                 </p>
-            <section>
+            </section>
+            <section class="team" id="team">
                 <h2>
                     Meet the Team!
                 </h2>
@@ -122,31 +128,38 @@
             </section>
         </main>
         <footer>
-            <h4>
-                Contact Us
-            </h4>
-            <p>
-                If you'd like to suggest a fresh new seasonal special, have a recommendation for our little café, or just want to have a friendly chat, you can reach us at brewster@brewstercafe.com
-            </p>
-            <h4>
-                Work With Us
-            </h4>
-            <p> 
-                We're always looking for friendly baristas - and if you don't have any experience, don't worry, we'll train you! Send us an internet carrier pidgeon over at letmebrew@brewstercafe.com
-            </p>
-            <h4>
-                Cafe Hours
-            </h4>
-            <p>
-                Brewster's Café is open 24 hours a day, for whenever you need a refreshment or place to rest your wings.
-            </p>
-            <div class="map">
-            <p> 
-                Find us at the premier pidgeon location on this planet, where some of the best coffee in the universe is roasted daily. 
-            </p>
-            <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17826653.915055428!2d-10.897150837500016!3d56.9469986285601!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1d77a81271d%3A0x36aff9788aefe39!2sPiazza%20San%20Marco%2C%2030100%20Venezia%20VE%2C%20Italy!5e0!3m2!1sen!2suk!4v1643631095069!5m2!1sen!2suk" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-       </div>
+            <section class="footer-section">
+                <div class="footer-container">
+                    <div>
+                        <h5 class="footer-text">
+                            Contact Us
+                        </h5>
+                        <p class="footer-text">
+                            If you'd like to suggest a fresh new seasonal special, have a recommendation for our little café, or just want to have a friendly chat, you can reach us at brewster@brewstercafe.com 
+                        </p>
+                        <h5 class="footer-text">
+                            Work With Us
+                        </h5>
+                        <p class="footer-text">
+                            We're always looking for friendly baristas - and if you don't have any experience, don't worry, we'll train you! Send us an internet carrier pidgeon over at letmebrew@brewstercafe.com
+                        </p>
+                        <h5 class="footer-text">
+                            Cafe Hours
+                        </h5>
+                        <p class="footer-text">
+                            Brewster's Café is open 24 hours a day, for whenever you need a refreshment or place to rest your wings.
+                        </p>
+                        <h5 class="footer-text">
+                            Location
+                        </h5>
+                        <p class="footer-text">
+                            Find us at the premier pidgeon location on this planet, where some of the best coffee in the universe is roasted daily.
+                        </p>
+                    </div>
+                    <iframe class="map"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17826653.915055428!2d-10.897150837500016!3d56.9469986285601!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1d77a81271d%3A0x36aff9788aefe39!2sPiazza%20San%20Marco%2C%2030100%20Venezia%20VE%2C%20Italy!5e0!3m2!1sen!2suk!4v1643631095069!5m2!1sen!2suk" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </section>
        <p class="copyright"> &copy; 2022 - Brewster the Pidgeon :) and also Gaia</p>
         </footer>
     </body>

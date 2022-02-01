@@ -55,6 +55,7 @@ h1 {
     display: block;
     max-width: 100%;
     margin-bottom: var(--spacing);
+    border-radius: 50px;
 }
 
 .about {
@@ -77,14 +78,30 @@ section {
 }
 
 footer {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    background: var(--dark);
+    width: 100vw;
+    background-color: var(--dark);
     color: white;
-    font-weight: bold;
-    margin-top: 50px;
-    justify-items: right;
+}
+
+.footer-section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: var(--spacing);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.footer-text {
+    font-size: 1rem;
+}
+
+.map {
+    display: block;
+    max-width: 100%;
+    margin-bottom: var(--spacing);
 }
 
 h2 {
@@ -101,8 +118,12 @@ h3 {
 }
 
 h4 {
-    font-family: 'Heebo', Arial, Helvetica, sans-serif;
+    font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
+}
+
+h5 {
+    font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -143,25 +164,23 @@ p {
 
 .blackboard-text {
     grid-column: span 2;
+    font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
 }
 
 .blackboard-price {
     text-align: right;
+    font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
 }
 
-.music::before {
-    content: "";
-    display: table;
-    clear: both;
+.music{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing);
 }
 
 .music-container {
-    min-height: 40vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--brewgreen);
-    margin-right: 4rem;
+    flex-direction: column-reverse;
 }
 
 .music-text{
@@ -170,12 +189,9 @@ p {
 
 .kk-img {
     display: block;
-    max-width: 100px;
-    max-height: 150px;
-    margin-right: 5em;
-    margin-left: 5em;
-    margin-top: 1em;
-    margin-bottom: 3em;
+    max-width: 100%;
+    margin-bottom: var(--spacing);
+    border-radius: 50px;
 }
 
 .scallop {
@@ -230,16 +246,6 @@ p {
     animation-name: flipInX;
 }
 
-.map {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: right;
-    justify-content: right;
-    margin-right: 50px;
-    margin-bottom: 50px;
-}
-
 @media screen and (min-width: 850px) {
     .about-container {
         flex-direction: row;
@@ -257,5 +263,25 @@ p {
         align-items: stretch;
         justify-content: center;
         gap: calc(var(--spacing) * 3);
+    }
+
+    .music-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .kk-img {
+        max-width: 25%;
+        margin-left: var(--spacing);
+    }
+
+    .footer-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .map {
+        max-width: 25%;
+        margin-left: var(--spacing);
     }
 }
