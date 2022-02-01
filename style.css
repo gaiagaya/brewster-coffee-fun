@@ -233,16 +233,11 @@ p {
     align-items: start;
     justify-items: center;
     margin: auto;
-    width: 500px;
+    width: 1200px;
 }
 
 .art-grid img {
     max-width: 100%
-}
-
-.art.grid img:nth-child(2) {
-    grid-column: span 3;
-    grid-row: span 2;
 }
 
 .team{
@@ -261,21 +256,17 @@ p {
 
 .team-grid {
     display:grid;
-    grid-template-columns: repeat(5,minmax(auto,auto));
-    grid-template-rows: repeat(2, minmax(auto,auuto));
+    grid-template-columns: repeat(15,minmax(auto,auto));
+    grid-template-rows: repeat(auto-fill, minmax(auto,auto));
     grid-gap:var(--spacing);
     align-items: center;
     justify-items: center;
-    width: 500px;
+    width: 1200px;
     overflow:hidden;
 }
 
 .team-grid img {
     max-height: 200px;
-}
-
-.team-grid img:hover {
-    max-height: 300px;
 }
 
 .scallop {
