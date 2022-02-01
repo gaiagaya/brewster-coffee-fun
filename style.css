@@ -246,8 +246,7 @@ p {
 }
 
 .team{
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     padding: var(--spacing);
 }
 
@@ -262,17 +261,21 @@ p {
 
 .team-grid {
     display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
-    grid-template-rows: repeat(auto-fill, minmax(100px,1fr));
-    grid-gap:1px;
-    align-items: start;
+    grid-template-columns: repeat(5,minmax(auto,auto));
+    grid-template-rows: repeat(2, minmax(auto,auuto));
+    grid-gap:var(--spacing);
+    align-items: center;
     justify-items: center;
-    margin: auto;
     width: 500px;
+    overflow:hidden;
 }
 
 .team-grid img {
-    max-width: 100%
+    max-height: 200px;
+}
+
+.team-grid img:hover {
+    max-height: 300px;
 }
 
 .scallop {
