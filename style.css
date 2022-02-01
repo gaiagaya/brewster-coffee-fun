@@ -44,6 +44,7 @@ h1 {
     font-family: var(--handwriting);
     font-weight: bold;
     color: var(--lightbrew);
+    border-left: 2px groove var(--lightbrew);
 }
 
 .navbar a:hover {
