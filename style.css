@@ -243,6 +243,21 @@ p {
     font-size: 2rem;
 }
 
+.team-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    grid-template-rows: repeat(auto-fill, minmax(100px,1fr));
+    grid-gap:1px;
+    align-items: start;
+    justify-items: center;
+    margin: auto;
+    width: 500px;
+}
+
+.team-grid img {
+    max-width: 100%
+}
+
 .scallop {
     position: relative;
     padding: 50px;
