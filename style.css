@@ -20,6 +20,7 @@ h1 {
     font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
     animation: flipInX;
     animation-iteration-count: 1;
+    font-weight: 900;
 }
 
 .navbar {
@@ -130,6 +131,7 @@ p {
     margin-bottom: 1em;
     font-family: 'Heebo', Arial, Helvetica, sans-serif;
     line-height: 1.4em;
+    font-weight: 200;
 }
 
 .blackboards {
@@ -165,11 +167,13 @@ p {
 .blackboard-text {
     grid-column: span 2;
     font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
 
 .blackboard-price {
     text-align: right;
     font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
+    font-weight: 900;
 }
 
 .music{
@@ -192,6 +196,36 @@ p {
     max-width: 100%;
     margin-bottom: var(--spacing);
     border-radius: 50px;
+}
+
+.art{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing);
+}
+
+.art-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.art-text{
+    font-size: 2rem;
+}
+
+.team{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing);
+}
+
+.team-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.team-text{
+    font-size: 2rem;
 }
 
 .scallop {
