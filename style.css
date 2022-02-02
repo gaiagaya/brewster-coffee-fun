@@ -10,7 +10,7 @@
 
 body{
     background: var(--brewgreen);
-    font: var(--handwriting)
+    font-family: var(--typed);
 }
 
 h1 {
@@ -126,7 +126,7 @@ h3 {
 
 h4 {
     font-family: var(--handwriting);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 900;
     color: var(--brewgreen);
 }
@@ -161,9 +161,14 @@ p {
 
 .blackboard-item {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 80px auto auto;
     grid-template-rows: auto auto;
+    grid-gap: 1rem;
     margin-bottom: var(--spacing);
+}
+
+.blackboard-item:last-child {
+    margin-bottom: 1rem;
 }
 
 .blackboard-img {
@@ -171,20 +176,20 @@ p {
     display: block;
     max-width: 80px;
     min-width: 80px;
-    margin-right:1rem;
 }
 
 .blackboard-text {
     grid-column: span 2;
+    margin-top: 1rem;
     font-family: var(--handwriting);
     font-weight: 100;
-    margin-top:1rem;
 }
 
 .blackboard-price {
     text-align: right;
     font-family: var(--handwriting);
     font-weight: 900;
+    font-size: 1.5rem;
     color: var(--brewgreen);
 }
 
@@ -221,26 +226,55 @@ p {
     flex-direction: column-reverse;
 }
 
-.art-text{
-    font-size: 2rem;
-}
-
 .art-grid {
-    display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
-    grid-template-rows: repeat(auto-fill, minmax(100px,1fr));
-    grid-gap:1px;
-    align-items: start;
-    justify-items: center;
-    margin: auto;
-    width: 1200px;
+    display: flex;
+    overflow-y: scroll;
 }
 
-.art-grid img {
-    max-width: 100%
+.art-img {
+    max-width: 150px;
+    background-color: white;
+    padding: 1rem;
+    border: 5px solid black;
+    margin: 1rem 2rem;
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.3);
+}
+/* shift left right, shift up down, spread, blur, opacity
+*/
+
+.art-text {
+    position: relative;
+    display: block;
+    padding: 5px 20px;
+    max-width: max-content;
+    margin: 0 auto;
+    font-size: 0.9em;
+    background-color: white;
+    box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.3);
 }
 
-.team{
+.art-text:before,
+.art-text:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.art-text:before {
+    top: calc(50% - 2px);
+    left: 8px;
+}
+
+.art-text:after {
+    top: calc(50% - 2px);
+    right: 8px;
+}
+
+.team {
     margin: 0;
     padding: var(--spacing);
 }
